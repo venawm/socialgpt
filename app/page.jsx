@@ -1,4 +1,5 @@
 import React from "react";
+import Feed from "@components/Feed";
 
 const Home = () => {
   return (
@@ -8,10 +9,12 @@ const Home = () => {
         <br className="max-md:hidden" />
         <span className="orange_gradient text-center">AI Prompts</span>
       </h1>
-      <p>
+      <p className="desc text-center">
         Social Gpt is an opensource AI prompt sharing platform where you can
         share your favoutite ChatGpt prompts.{" "}
       </p>
+
+      <Feed />
     </section>
   );
 };
